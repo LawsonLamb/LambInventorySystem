@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EA4300D6-1015-8AD3-6AFC-D43309429E91}") = "LambInventorySystem", "Assembly-CSharp.csproj", "{2DD78603-9DA5-C1D1-89E4-B42BB1887D21}"
+EndProject
+Project("{EA4300D6-1015-8AD3-6AFC-D43309429E91}") = "LambInventorySystem", "Assembly-CSharp-Editor.csproj", "{2347FDB0-0B95-9219-6F40-D8E8763108EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD78603-9DA5-C1D1-89E4-B42BB1887D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD78603-9DA5-C1D1-89E4-B42BB1887D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD78603-9DA5-C1D1-89E4-B42BB1887D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD78603-9DA5-C1D1-89E4-B42BB1887D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2347FDB0-0B95-9219-6F40-D8E8763108EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2347FDB0-0B95-9219-6F40-D8E8763108EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2347FDB0-0B95-9219-6F40-D8E8763108EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2347FDB0-0B95-9219-6F40-D8E8763108EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
