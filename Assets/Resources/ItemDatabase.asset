@@ -11,3 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef1bd298648f4856a35b727ca00bb28, type: 3}
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
+  m_Database:
+  - ID: 
+    itemName: 
+    mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
