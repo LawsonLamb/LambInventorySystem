@@ -12,28 +12,36 @@ namespace Scrappy
     {
         namespace Editor
         {
-
-
-            [System.Serializable]
-            public class ScriptableObjectDatabaseWindow<T> : EditorWindow   
-                where T :ScriptableObject
+			 [System.Serializable]
+            public abstract class ScriptableObjectDatabaseWindow<T> : EditorWindow   
+				where T :ScriptableObject
             {
-                private int m_Index = 0;
+                public int m_Index = 0;
                 private Vector2 m_ScrollPosition = Vector2.zero;
-                private T m_Type;
-                public string AssetPath = " ";
-                  public string MenuPath = "";
-                 public string WindowLabel = " ";
+              	public T m_Type;
+				public  string AssetPath = " ";
+                public string MenuPath = "";
+                public string WindowLabel = " ";
+		
 
 
-
-            void OnEnable()
+             	void OnEnable()
                 {
+
+					Init ();
                     m_Index = 0;
+					m_Type = LoadDatabase<T> (AssetPath);
+
+					if (m_Type == null) {
+						m_Type = CreateDatabase<T> (AssetPath);
+
+					}
+						
+					
                 }
 
 
-            void OnGUI()
+           		void OnGUI()
                 {
                     GUILayout.Label(WindowLabel, EditorStyles.boldLabel);
 
@@ -48,6 +56,9 @@ namespace Scrappy
 
 
                 }
+
+
+
 
                 public virtual void Header( )
                 {
@@ -70,32 +81,53 @@ namespace Scrappy
 
                 }
 
+				public virtual void ScrollArea(){
+					EditorGUILayout.BeginVertical (GUILayout.Width(500));
+					m_ScrollPosition = GUILayout.BeginScrollView(m_ScrollPosition,GUILayout.ExpandHeight(true)); 
+
+					scrollList ();
+
+					GUILayout.EndScrollView();
+					EditorGUILayout.EndVertical ();
+
+
+				}
+
+
+				public virtual void scrollList() {
+					
+
+				}
+
+				public virtual void propertyWindow(){
+					
+						
+
+				}
 
                 public virtual void Body()
                 {
-
+					ScrollArea ();
+					propertyWindow ();
 
                 }
-
-                
-
 
                 public virtual void Footer()
                 {
 
                 }
-               
 
+				public virtual void Init(){
 
-
-               public static T LoadDatabase<T> (string AssetPath) where T :ScriptableObject
+				}
+            
+				public static T LoadDatabase<T> (string AssetPath) where T :ScriptableObject
                 {
                 return AssetDatabase.LoadAssetAtPath<T>(AssetPath);
 
                 }
 
-        
-               public static T CreateDatabase<T>(string AssetPath) where T: ScriptableObject
+        		 public static T CreateDatabase<T>(string AssetPath) where T: ScriptableObject
                 {
                     T type = ScriptableObject.CreateInstance<T>();
                     AssetDatabase.CreateAsset(type, AssetPath);

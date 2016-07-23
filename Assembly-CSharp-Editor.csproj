@@ -45,7 +45,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\EditorMenu.cs" />
+     <Compile Include="Assets\LambDataBase\Editor\EditorAdapterList.cs" />
+     <Compile Include="Assets\LambDataBase\Editor\EditorMenu.cs" />
+     <Compile Include="Assets\LambDataBase\Editor\ItemEditor.cs" />
+     <Compile Include="Assets\LambDataBase\Editor\ScriptableObjectDatabaseWindow.cs" />
+     <Compile Include="Assets\Rotorz\Reorderable List Field\Demo\Editor\DemoBehaviourEditor.cs" />
+     <Compile Include="Assets\Rotorz\Reorderable List Field\Demo\Editor\MultiListEditorWindowDemo.cs" />
+     <Compile Include="Assets\Rotorz\Reorderable List Field\Demo\Editor\ReorderableListDemo.cs" />
+     <None Include="Assets\Rotorz\Reorderable List Field\!README.txt" />
+     <None Include="Assets\Rotorz\Reorderable List Field\!LICENSE.txt" />
+     <None Include="Assets\Rotorz\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>/Users/ItBNinja/LambInventorySystem/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
@@ -84,6 +96,9 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Editor.ReorderableList">
+ <HintPath>/Users/ItBNinja/LambInventorySystem/Assets/Rotorz/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

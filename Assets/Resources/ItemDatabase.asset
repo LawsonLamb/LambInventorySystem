@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
   m_Database:
-  - ID: 
-    itemName: 
+  - ID: 1
+    itemName: Name
+    mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - ID: 1
+    itemName: Name
     mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -45,15 +45,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AdpaterList.cs" />
+     <Compile Include="Assets\LambDataBase\Script\ScriptableObjectDatabase.cs" />
+     <Compile Include="Assets\Rotorz\Reorderable List Field\Demo\DemoBehaviour.cs" />
      <Compile Include="Assets\Scripts\Base\Item.cs" />
      <Compile Include="Assets\Scripts\Base\ItemWorldObject.cs" />
+     <Compile Include="Assets\Scripts\Database\ItemDatabase.cs" />
      <Compile Include="Assets\Scripts\Folder2D\Item2D.cs" />
      <Compile Include="Assets\Scripts\Inventory\IInventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
-     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjectDatabase.cs" />
      <Compile Include="Assets\Scripts\UI\HUD.cs" />
+     <None Include="Assets\Rotorz\Reorderable List Field\!README.txt" />
+     <None Include="Assets\Rotorz\Reorderable List Field\!LICENSE.txt" />
+     <None Include="Assets\Rotorz\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
